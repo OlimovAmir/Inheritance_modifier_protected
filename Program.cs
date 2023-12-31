@@ -21,12 +21,22 @@ class Program
         }
     }
 
+    class B : A
+    {
+        public B()
+        {
+            Console.WriteLine(protectedFiled = 12);
+        }
+    }
+
     
 
     static void Main(string[] args)
     {
 
         A a = new A();
+        B b = new B();
+        
         string filePath = "file.txt";
 
        
